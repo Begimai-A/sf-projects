@@ -1,0 +1,14 @@
+  A batch class that summarizes all Opportunity Amounts for each Account;
+
+  An email is sent to the primary contact of all Accounts, containing a table with the Closed Won/Open/Closed Lost summarized Opportunity Amounts;
+
+ The schedulable class that calls the batch class should be created;
+
+ script to schedule the job daily at 10:00 AM, once a week (Friday at 1:00 PM), once a month(Last Friday of the Month at 6:00 PM).
+ 
+String dailyCron = '0 0 10 * * ?'; // Run daily at 10:00 AM
+String weeklyCron = '0 0 13 ? * FRI'; // Run every Friday at 1:00 PM
+String monthlyCron = '0 0 18 ? * 6L'; // Run on the last Friday of the month at 6:00 PM
+system.schedule('Daily Job', dailyCron,new AccountsOppAmountsSchedulable);
+system.schedule('Weekly Job', weeklyCron, new AccountsOppAmountsSchedulable);
+system.schedule('Monthly Job', monthlyCron, new AccountsOppAmountsSchedulable);
