@@ -1,0 +1,4 @@
+A Visualforce page that displays the following:
+-Account Details: Account Name, Account Number, Type, Active, Phone, Fax. The fields should be displayed as input fields using the Standard Controller. A Save/Cancel Option should be available.
+-Related Contact list with the following read-only columns: Name, Title, Phone, Is Primary Contact.
+Set Primary Contact" custom button that will redirect the user to the Visualforce page and add it to the Account Layout.
