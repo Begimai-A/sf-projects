@@ -1,0 +1,2 @@
+Validation if the Account already has a Primary Contact set a new one cannot be added;
+When contact is set as primary, the Primary Contact Phone should be updated to all Contacts related to the same account. An asynchronous process. 
