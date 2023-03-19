@@ -1,0 +1,15 @@
+<apex:page standardController="Account" extensions="WeatherController">    
+    <apex:pageBlock title="Weather in {!Account.BillingCity}:" >
+        <apex:pageBlockSection columns="2" >            
+            <apex:outputText label="Description:" value="{!description}"/>  
+            <apex:outputText label="Temperature:" value="{!temperature}"/>   
+            <apex:image url="{!iconUrl}" width="35" height="35" styleClass="weather-icon"/>
+             <style>
+            .weather-icon {
+            float: left !important;
+            margin-right: 50px !important; 
+            }
+        </style>
+        </apex:pageBlockSection>    
+    </apex:pageBlock>
+</apex:page>
