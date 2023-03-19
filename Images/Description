@@ -1,0 +1,6 @@
+A visualforce page that will be integrated into the Account layout
+Invokes openweathermap API in order to get the weather of the associated city (https://openweathermap.org/current )
+Displays:
+Temperature
+Description
+Icon (https://openweathermap.org/weather-conditions )
